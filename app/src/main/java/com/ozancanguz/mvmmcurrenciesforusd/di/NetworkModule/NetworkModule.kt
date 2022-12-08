@@ -1,6 +1,6 @@
 package com.ozancanguz.mvmmcurrenciesforusd.di.NetworkModule
 
-import com.ozancanguz.mvmmcurrenciesforusd.data.network.RatesApi
+import com.ozancanguz.mvmmcurrenciesforusd.data.network.CurrencyApi
 import com.ozancanguz.mvmmcurrenciesforusd.utils.Constants.Companion.BASE_URL
 import dagger.Module
 import dagger.Provides
@@ -46,7 +46,7 @@ object NetworkModule {
 
     @Singleton
     @Provides
-    fun provideApiService(retrofit: Retrofit): RatesApi {
-        return retrofit.create(RatesApi::class.java)
+    fun provideApiService(retrofit: Retrofit): CurrencyApi {
+        return retrofit.create(CurrencyApi::class.java)
     }
 }

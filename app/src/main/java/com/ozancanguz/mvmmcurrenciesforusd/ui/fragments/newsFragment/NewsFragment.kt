@@ -8,8 +8,9 @@ import android.view.ViewGroup
 import com.ozancanguz.mvmmcurrenciesforusd.R
 import com.ozancanguz.mvmmcurrenciesforusd.databinding.FragmentCurrencyDetailsBinding
 import com.ozancanguz.mvmmcurrenciesforusd.databinding.FragmentNewsBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class NewsFragment : Fragment() {
 
     private var _binding: FragmentNewsBinding? = null

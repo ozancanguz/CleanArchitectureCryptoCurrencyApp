@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import com.ozancanguz.mvmmcurrenciesforusd.R
 import com.ozancanguz.mvmmcurrenciesforusd.databinding.FragmentCurrencyDetailsBinding
 import com.ozancanguz.mvmmcurrenciesforusd.databinding.FragmentCurrencyListBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class CurrencyDetailsFragment : Fragment() {
 
 
