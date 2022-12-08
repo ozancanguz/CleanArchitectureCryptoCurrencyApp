@@ -48,7 +48,7 @@ class CurrencyListFragment : Fragment() {
     private fun observeLiveData() {
         ratesViewModel.requestAllData()
         ratesViewModel.currencyList.observe(viewLifecycleOwner, Observer {
-            Log.d("rates"," " +it)
+
         })
     }
 
