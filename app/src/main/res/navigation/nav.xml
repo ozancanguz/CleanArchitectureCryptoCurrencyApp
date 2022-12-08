@@ -15,4 +15,9 @@
         android:name="com.ozancanguz.mvmmcurrenciesforusd.ui.fragments.detailfragment.CurrencyDetailsFragment"
         android:label="fragment_currency_details"
         tools:layout="@layout/fragment_currency_details" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.ozancanguz.mvmmcurrenciesforusd.ui.fragments.newsFragment.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" />
 </navigation>
