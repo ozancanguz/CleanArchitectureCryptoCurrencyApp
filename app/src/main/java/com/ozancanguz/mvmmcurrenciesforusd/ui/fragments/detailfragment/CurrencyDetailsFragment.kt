@@ -6,15 +6,28 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.ozancanguz.mvmmcurrenciesforusd.R
+import com.ozancanguz.mvmmcurrenciesforusd.databinding.FragmentCurrencyDetailsBinding
+import com.ozancanguz.mvmmcurrenciesforusd.databinding.FragmentCurrencyListBinding
 
 class CurrencyDetailsFragment : Fragment() {
+
+
+    private var _binding: FragmentCurrencyDetailsBinding? = null
+    private val binding get() = _binding!!
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_currency_details, container, false)
+
+        _binding = FragmentCurrencyDetailsBinding.inflate(inflater, container, false)
+        val view = binding.root
+
+
+
+        return view
+
     }
 
 
